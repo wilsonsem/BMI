@@ -12,19 +12,25 @@ button.addEventListener("click", function(event){
     const height = +document.querySelector("#height").value
     let bmi = weight/(height*height)
 
-    if(bmi<18.5){
-        result.innerHTML = `BMI is : ${bmi}Kg/m&sup2 underweight`
+
+    if((weight == " ")||(height == " ")){
+        result.innerHTML = `<h2>Please input values</h2>`
+        result.style.text="red"
+        result.align = "center"
+    }
+    else if(bmi<18.5){
+        result.innerHTML = `BMI is : ${bmi}Kg/m&sup2 <br>You are underweight`
         result.style.color="red"
     }else if((bmi >= 18.5) && (bmi <= 24.9)){
-        result.innerHTML = `BMI is :  ${bmi}Kg/m&sup2 normalweight`
+        result.innerHTML = `BMI is :  ${bmi}Kg/m&sup2 <br>Your weight is normal`
         result.style.color="green"
         
     } else if((bmi >= 25.0) && (bmi <= 29.9)){
-        result.innerHTML = `BMI is :  ${bmi}Kg/m&sup2 overweight`
-        result.style.color="crimson"
+        result.innerHTML = `BMI is :  ${bmi}Kg/m&sup2 <br>You are overweight`
+        result.style.color="purple"
         
     }else if(bmi >=  30.0 ){
-        result.innerHTML = `BMI is :  ${bmi}Kg/m&sup2 obessed`
+        result.innerHTML = `BMI is :  ${bmi}Kg/m&sup2 <br>You are obessed`
         result.style.color="red"        
 
     }else{

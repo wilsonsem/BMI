@@ -39,6 +39,7 @@ svg {
 main {
   display: flex;
   height: calc(100vh - 50px);
+  /* width: 100%; */
 }
 
 main .left-section,
@@ -88,8 +89,8 @@ button {
 }
 #modal-w{
   visibility: hidden;
-  width:300px; 
-  height:150px;
+  width:500px; 
+  height:200px;
   margin: -400px auto;   
 }
 .modal-wrap{
@@ -119,3 +120,35 @@ button {
   line-height: 1.5;
 }
 
+@media(max-width:600px){
+  #modal-w{
+    /* visibility: hidden; */
+    width:400px; 
+    height:200px;
+    margin: -200px auto;   
+  }
+  main{
+    display: block;
+    /* flex-direction: column; */
+  }
+  .left-section{
+    display: none;
+  }
+  main .right-section {
+    width: 100%;
+  }
+
+  .right-section .form-control {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .right-section .form-control input {
+    width: 80%;
+    padding: 10px;
+  }
+
+  button {
+    width: 80%;
+  }
+}
