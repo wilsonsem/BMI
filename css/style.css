@@ -137,7 +137,9 @@ button {
   main .right-section {
     width: 100%;
   }
-
+  .right-section{
+    padding-top: 30px;
+  }
   .right-section .form-control {
     width: 100%;
     margin: 20px 0;
