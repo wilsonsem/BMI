@@ -125,7 +125,7 @@ button {
     /* visibility: hidden; */
     width:300px; 
     height:200px;
-    margin: -550px auto;   
+    margin: -350px auto;   
   }
   main{
     display: flex;
