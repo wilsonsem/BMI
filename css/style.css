@@ -125,11 +125,12 @@ button {
     /* visibility: hidden; */
     width:400px; 
     height:200px;
-    margin: -200px auto;   
+    margin: -300px auto;   
   }
   main{
-    display: block;
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .left-section{
     display: none;
