@@ -123,9 +123,9 @@ button {
 @media(max-width:600px){
   #modal-w{
     /* visibility: hidden; */
-    width:400px; 
+    width:300px; 
     height:200px;
-    margin: -300px auto;   
+    margin: -550px auto;   
   }
   main{
     display: flex;
@@ -138,9 +138,9 @@ button {
   main .right-section {
     width: 100%;
   }
-  #weight{
-    margin-top: 50px;
-  }
+  /* #weight{
+    margin-top: 20px;
+  } */
   .right-section .form-control {
     width: 100%;
     margin: 20px auto;
